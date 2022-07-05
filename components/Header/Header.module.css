@@ -2,6 +2,13 @@
     display: grid;
     grid-template-columns: 80px 80px 1fr;   
 }
+
+.icono-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 .header-container >nav {
     padding-top: 10px;
     grid-column-start: 1;
@@ -45,6 +52,10 @@
 
     .logo {
         width: 140px;
+    }
+
+    .icono-menu {
+        display: none;
     }
 
     .header-container >nav ul .btn-servicios {

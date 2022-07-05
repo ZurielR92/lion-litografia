@@ -22,7 +22,11 @@ export const Header: FC<Props> = () => {
   return (
 
     <header className={`${styles['header-container']}`}>
-        <div></div>
+        <div>
+            <div className={styles['icono-menu']}>
+                <Image src={'/img/menu-icon.png'} width={40} height={40} />
+            </div>
+        </div>
         <div className={styles['logo-container']}>
             <div className={styles.logo}>
                 <Image 
@@ -32,8 +36,9 @@ export const Header: FC<Props> = () => {
                     height={95}/>
             </div>
         </div>
-        <div></div>
-        <nav>
+        <div>
+        </div>
+{/*         <nav>
             <ul>
                 <li className={styles['btn-servicios']}>
                     <span>SERVICIOS</span>
@@ -58,7 +63,7 @@ export const Header: FC<Props> = () => {
                 </li>
                 |
             </ul>
-        </nav>
+        </nav> */}
     </header>
 
 
