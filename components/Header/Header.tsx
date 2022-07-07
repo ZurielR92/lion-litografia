@@ -31,7 +31,7 @@ export const Header: FC<Props> = () => {
                 <div className={`${styles['contenedor']} ${styles['contenedor-botones-menu']}`}>
                     <button 
                         id="btn-menu-barras" 
-                        onClick={logic.handleMenuMobile}
+                        onClick={() => logic.handleMenuMobile(contenedorEnlacesNav)}
                         className={`${styles["btn-menu-barras"]}`}>
                             <i className="fas fa-bars"></i>
                     </button>
