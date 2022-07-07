@@ -89,6 +89,7 @@ const initEvents = (grid:any, btnCerrarMenu:any, contenedorSubCategorias:any) =>
     })
 }
 
+
 const logic = {
     initEvents,
     handleDepartmentsMobile,
