@@ -357,13 +357,13 @@ export const Header: FC<Props> = () => {
                                         <Link href={'/servicios/souvenirs-publicitarios/llaveros'}>
                                                 <a>Llaveros</a>
                                         </Link>
-                                        <Link href={'/servicios/souvenirs-publicitarios/Termos'}>
+                                        <Link href={'/servicios/souvenirs-publicitarios/termos'}>
                                                 <a>Termos</a>
                                         </Link>
                                         <Link href={'/servicios/souvenirs-publicitarios/mugs'}>
                                                 <a>Mugs</a>
                                         </Link>
-                                        <Link href={'/servicios/souvenirs-publicitarios/camisas'}>
+                                        <Link href={'/servicios/souvenirs-publicitarios/camisetas'}>
                                                 <a>Camisas</a>
                                         </Link>
                                         <Link href={'/servicios/souvenirs-publicitarios/gorras'}>
@@ -397,8 +397,22 @@ export const Header: FC<Props> = () => {
                                     <div className={`${styles['enlaces-subcategoria']}`}>
                                         <button className={`${styles['btn-regresar']} btn-regresar`}><i className="fas fa-arrow-left"></i>Regresar</button>
                                         <h3 className={`${styles.subtitulo}`}>Desarrollo Web</h3>
-                                        <a href="#">Alimentos</a>
-                                        <a href="#">Bebidas</a>
+                                        <Link href={'/servicios/desarrollo-web/paginas-web'}>
+                                                <a>Paginas Web</a>
+                                        </Link>
+                                        <Link href={'/servicios/desarrollo-web/tiendas-virtuales'}>
+                                                <a>Tiendas Virtuales</a>
+                                        </Link>
+                                        <Link href={'/servicios/desarrollo-web/aplicaciones-web'}>
+                                                <a>Aplicaciones Web</a>
+                                        </Link>
+                                        <Link href={'/servicios/desarrollo-web/seo'}>
+                                                <a>SEO</a>
+                                        </Link>
+                                        <Link href={'/servicios/desarrollo-web/redes-sociales'}>
+                                                <a>Redes Sociales</a>
+                                        </Link>
+
                                     </div>
 
                                     <div className={`${styles['banner-subcategoria']}`}>
@@ -426,8 +440,6 @@ export const Header: FC<Props> = () => {
                     </div>
                 </div>
             </nav>
-
-
     </header>
 
   )

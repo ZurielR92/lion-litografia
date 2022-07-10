@@ -1,0 +1,144 @@
+.contenedor-bienvenida {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #212121;
+    height: auto;
+}
+
+.contenedor-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 60px;
+
+}
+
+.contenedor-titulo span {
+    color: #fec931;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.contenedor-titulo h1 {
+    font-family: 'Rubik';
+    letter-spacing: -5px;
+    line-height: 55px;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.contenedor-titulo button {
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: bold;
+    color: #212121;
+    background-color: #fec931;;
+    padding: 15px;
+    border: none;
+    border-radius: 500px;
+    margin-top: 20px;
+}
+
+.contenedor-imagen {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+
+}
+
+.contenedor-imagen .cont1 {
+    display: none;
+
+}
+
+.contenedor-imagen .cont2 {
+    background: linear-gradient(90deg, rgba(254,200,51,1) 0%, rgba(233,72,50,1) 100%);
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 100%);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+.contenedor-imagen .img {
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+
+    .contenedor-bienvenida {
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
+
+    .contenedor-titulo h1 {
+        letter-spacing: -5px;
+        line-height: 110px;
+        font-size: 100px;
+        text-align: center;
+        margin: 0;
+        color: #ffffff;
+    }
+
+    .contenedor-titulo button {
+        font-family: 'Rubik';
+        font-size: 18px;
+        font-weight: bold;
+        color: #212121;
+        background-color: #fec931;;
+        padding: 15px;
+        border: none;
+        border-radius: 500px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: all ease 500ms;
+    }
+    
+    .contenedor-titulo button:hover {
+        color: #fff;
+        background-color: #FF4328;
+    }
+
+    .contenedor-imagen {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .contenedor-imagen .cont1 {
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .contenedor-imagen .cont2 {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .contenedor-imagen .img {
+        
+    }
+
+}
