@@ -15,7 +15,12 @@ export const Welcome:FC = () => {
             <div className={styles.cont1}></div>
             <div className={styles.cont2}></div>
             <div className={styles.img}>
-                <Image src={'/img/servicio-impresion-medellin.png'} width={1200} height={800}/>
+                <Image 
+                    width={1200} 
+                    height={800}
+                    layout='intrinsic'
+                    src={'/img/servicio-impresion-medellin.png'} 
+                />
             </div>
         </div>
     </section>
