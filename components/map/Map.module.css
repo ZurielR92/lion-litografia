@@ -1,0 +1,19 @@
+.mapa-responsivo {
+    overflow:hidden;
+    position:relative;
+    height:100vh;
+}
+
+.mapa-responsivo iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+@media screen and (min-width: 800px) {
+    .mapa-responsivo {
+        height:50vh;
+    }
+}

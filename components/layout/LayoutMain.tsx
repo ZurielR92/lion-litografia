@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react'
+import { Footer } from '../footer/Footer'
 import { Header } from '../Header/Header'
 
 interface Props {
@@ -10,8 +11,7 @@ export const LayoutMain: FC<Props> = ( { children } ) => {
     <>
     <Header/>
     { children }
-    <h3>Footer</h3>
-    
+    <Footer/>
     </>
   )
 }
