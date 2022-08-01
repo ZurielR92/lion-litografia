@@ -3,6 +3,7 @@ import { Welcome } from '../components/welcome/Welcome';
 import { PopularCategories } from '../components/categories/popularCategories/PopularCategories'; 
 import { categoriesList } from '../data/categories';
 import { categoryInterface } from '../interfaces';
+import { SEO } from '../components/SEO/SEO';
 
 interface Props {
   listaCategorias: categoryInterface[]
@@ -12,6 +13,11 @@ const Home: NextPage<Props> = (props) => {
 
   return (
     <>
+
+    <SEO
+    title='Imprenta'
+    />
+
     <Welcome/>
     <PopularCategories categoryList={props.listaCategorias} />
     </>
