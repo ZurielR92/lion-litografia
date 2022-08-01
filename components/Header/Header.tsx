@@ -49,14 +49,14 @@ export const Header: FC<Props> = () => {
                     <div className={styles['contenedor-logo']}>
                         <Image priority src={'/img/logo-lion-litografia.png'} width={110} height={80}/>
                     </div>
-                    <div 
+{/*                     <div 
                         onClick={() => logic.handleDepartmentsMobile(grid, btnCerrarMenu)}
                         onMouseEnter={() => logic.handleShowMenuDesktop(grid)}
                         className={`${styles['btn-departamentos']}`}
                         id="btn-departamentos">
                             <p>Todos Nuestros <span>SERVICIOS</span></p>
                             <i className="fas fa-caret-down"/>
-                    </div>
+                    </div> */}
 
                     <div className={styles['separador-logo']}></div>
 

@@ -1,17 +1,45 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import { Welcome } from '../components/welcome/Welcome';
-import { Nosotros1 } from '../components/nosotros1/Nosotros1';
-import { Map } from '../components/map/Map';
-import { ProductosPopulares } from '../components/productos/productosPopulares/ProductosPopulares';
+import { PopularCategories } from '../components/categories/popularCategories/PopularCategories'; 
+import { categoriesList } from '../data/categories';
+import { categoryInterface } from '../interfaces';
 
-const Home: NextPage = () => {
+interface Props {
+  listaCategorias: categoryInterface[]
+}
+
+const Home: NextPage<Props> = (props) => {
+
   return (
     <>
     <Welcome/>
-    <Nosotros1/>
-    <ProductosPopulares/>
+    <PopularCategories categoryList={props.listaCategorias} />
     </>
   )
+
 }
+
+
+
+export const getStaticProps: GetStaticProps = async(ctx) => {
+
+  const listaCategorias: categoryInterface[] = [];
+  const codigos: string[] = ['0101','0205','0106','0201','0501','0102' ];
+
+  for (let p = 0; p < 6; p++) {
+    categoriesList.find((obj, i) => {
+      if (obj.code === codigos[p]) {
+        listaCategorias.push(obj);
+      }
+    })
+  }
+  return {
+    props: {
+      listaCategorias
+    }
+  }
+}
+
+
 
 export default Home
