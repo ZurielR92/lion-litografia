@@ -4,7 +4,7 @@ import { CategoryCard } from '../categoryCard/CategoryCard';
 
 import { categoryInterface } from '../../../interfaces';
 
-import styles from './popularCategories.module.css'
+import styles from './PopularCategories.module.css'
 
 interface Props {
   categoryList: categoryInterface[];
